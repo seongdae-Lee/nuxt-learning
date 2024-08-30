@@ -9,14 +9,13 @@
       </q-toolbar>
     </q-header>
     <q-page-container :style="pageContainerStyle">
-      <slot></slot>
       <NuxtPage />
     </q-page-container>
   </q-layout>
 </template>
 <script setup lang="ts">
 const pageContainerStyle = computed(() => ({
-  maxWidth: '1080px',
-  margin: '0 auto',
+  maxWidth: "1080px",
+  margin: "0 auto",
 }));
 </script>
