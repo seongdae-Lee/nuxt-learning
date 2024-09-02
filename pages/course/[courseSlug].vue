@@ -51,7 +51,8 @@
 
 <script setup lang="ts">
 const route = useRoute();
-const { course } = useCourse(route.params.courseSlug as string);
+const courseSlug = route.params.courseSlug as string;
+const { course } = useCourse(courseSlug);
 </script>
 
 <style scoped></style>
