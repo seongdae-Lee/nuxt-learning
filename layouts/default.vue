@@ -9,7 +9,7 @@
       </q-toolbar>
     </q-header>
     <q-page-container :style="pageContainerStyle">
-      <NuxtPage />
+      <slot></slot>
     </q-page-container>
   </q-layout>
 </template>
