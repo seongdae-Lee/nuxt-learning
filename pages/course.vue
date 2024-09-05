@@ -18,6 +18,9 @@
                 {{ index + 1 }}. {{ course.title }}
               </q-item-section>
             </q-item>
+            <q-item v-ripple clickable to="/course/empty"
+              ><q-item-section> Empty Course (throw error) </q-item-section>
+            </q-item>
             <!-- <NuxtLink to="/course/prefetching-1">Prefetching Test 1</NuxtLink> -->
             <!-- <q-item to="/course/prefetching-1">Prefetching Test 1</q-item> -->
             <!-- <q-item to="/course/prefetching-2">Prefetching Test 2</q-item>
