@@ -5,8 +5,16 @@ export default defineNuxtConfig({
     shim: false,
     typeCheck: true,
   },
-  modules: ['nuxt-quasar-ui'],
+  modules: ["nuxt-quasar-ui"],
   quasar: {
     /* */
+  },
+  imports: {
+    presets: [
+      {
+        from: "vue-i18n",
+        imports: ["useI18n"],
+      },
+    ],
   },
 });
