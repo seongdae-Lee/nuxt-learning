@@ -109,4 +109,6 @@ const { locale } = useI18n();
 const selectedLanguageName = computed(() => {
   return languages.value.find((lang) => lang.code == locale.value)?.name;
 });
+
+watch(locale, (val) => (useCookie("locale").value = val));
 </script>
